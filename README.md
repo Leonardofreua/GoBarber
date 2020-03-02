@@ -34,10 +34,34 @@ This project was developed with the following technologies:
 - [bee-queue](https://github.com/bee-queue/bee-queue)
 - [Sentry Repository](https://github.com/getsentry/sentry) | [Sentry Site](https://sentry.io)
 - [Nodemailer Repository](https://github.com/nodemailer/nodemailer) | [Nodemailer Site](http://nodemailer.com/)
-
+- [Mailtrap](https://mailtrap.io/)
+- [date-fns](https://date-fns.org/)
 
 ### Databases
 
 - [Postgres](https://www.postgresql.org/) - *Main storage*
 - [MongoDB](https://www.mongodb.com/) - *To store the Notifications*
 - [Redis](https://redis.io/) - *Manage by sending emails in the queue*
+
+## 💻 Project
+
+GoBarber is a project that aims to provide several features present in a possible application for a Barber Shop, these features include:
+
+- User registration and authentication via `JWT`;
+- Upload user avatar using `Multer`;
+- Appointments registration and listing;
+- Schedule notifications;
+- Appointment cancellation with email notification to the provider.
+
+## 🤔 How to contribute
+
+- Fork this repository;
+- Create a branch with your feature: `git checkout -b my-feature`;
+- Commit your changes: `git commit -m 'feat: My new feature'`;
+- Push to your branch: `git push origin my-feature`.
+
+Once your pull request merge is done, you can delete your branch.
+
+## :memo: License
+
+This project is under the MIT license. See [LICENSE](LICENSE) file for more details.

@@ -17,6 +17,7 @@
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-installation">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
@@ -52,6 +53,15 @@ GoBarber is a project that aims to provide several features present in a possibl
 - Appointments registration and listing;
 - Schedule notifications;
 - Appointment cancellation with email notification to the provider.
+
+## :minidisc: Installation
+
+- Clone project: `git clone https://github.com/Leonardofreua/GoBarber.git`
+- Download Postgres image: `docker run --name storage_goBarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres`
+- Download MongoDB image: `docker run --name mongobarber -p 27017:27017 -d -t mongo`
+- Download Redis image: `docker run --name redisbarber -p 6379:6379 -d -t redis:alpine`
+- Run: `yarn install`
+- Then: `yarn dev`
 
 ## 🤔 How to contribute
 

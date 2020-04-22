@@ -11,8 +11,16 @@ export default createGlobalStyle`
       box-sizing: border-box;
     }
 
+    *:focus {
+      outline: 0;
+    }
+
     html, body, #root {
       height: 100%;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
     }
 
     body, input button {

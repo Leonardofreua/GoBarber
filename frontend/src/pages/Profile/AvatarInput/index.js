@@ -5,7 +5,7 @@ import api from '~/services/api';
 
 import { Container } from './styles';
 
-function AvatarInput() {
+export default function AvatarInput() {
   const { defaultValue, registerField } = useField('avatar');
 
   const [file, setFile] = useState(defaultValue && defaultValue.id);
@@ -23,10 +23,10 @@ function AvatarInput() {
     }
   }, [ref, registerField]);
 
-  async function handleChange(event) {
+  async function handleChange(e) {
     const data = new FormData();
 
-    data.append('file', event.target.files[0]);
+    data.append('file', e.target.files[0]);
 
     const response = await api.post('files', data);
 
@@ -58,5 +58,3 @@ function AvatarInput() {
     </Container>
   );
 }
-
-export default AvatarInput;

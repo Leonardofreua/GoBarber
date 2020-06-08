@@ -20,6 +20,7 @@ import {
 
 export default function Profile({ navigation }) {
   const profile = useSelector((state) => state.user.profile);
+  const loading = useSelector((state) => state.auth.loading);
   const dispatch = useDispatch();
 
   const emailRef = useRef();

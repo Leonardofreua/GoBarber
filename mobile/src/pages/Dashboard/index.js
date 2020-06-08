@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { withNavigationFocus } from '@react-navigation/compat';
 import PropTypes from 'prop-types';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import api from '~/services/api';
 

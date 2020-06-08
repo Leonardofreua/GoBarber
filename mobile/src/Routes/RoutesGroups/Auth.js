@@ -10,7 +10,7 @@ const AppTab = createBottomTabNavigator();
 export default function Auth() {
   return (
     <AppTab.Navigator
-      screenOptions={{ resetOnBlur: true }}
+      screenOptions={{ resetOnBlur: true, tabBarVisible: true }}
       tabBarOptions={{
         keyboardHidesTabBar: true,
         activeTintColor: '#fff',

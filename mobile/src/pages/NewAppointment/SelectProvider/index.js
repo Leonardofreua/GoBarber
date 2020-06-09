@@ -44,9 +44,11 @@ export default function SelectProvider({ navigation }) {
           renderItem={({ item: provider }) => (
             <Provider
               onPress={() =>
-                navigation.navigate('SelectedDateTime', { provider })
+                navigation.navigate('SelectDateTime', { provider })
               }
             >
+              {console.tron.log(provider)}
+
               <Avatar
                 source={{
                   uri: provider.avatar

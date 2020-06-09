@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withNavigationFocus } from '@react-navigation/compat';
 import PropTypes from 'prop-types';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import api from '~/services/api';
 
@@ -10,13 +9,8 @@ import Appointment from '~/components/Appointment';
 
 import { Container, Title, List } from './styles';
 
-function Dashboard({ navigation, isFocused }) {
+function Dashboard({ isFocused }) {
   const [appointments, setAppointments] = useState([]);
-
-  navigation.setOptions({
-    tabBarLabel: 'Schedule',
-    tabBarIcon: () => <Icon name="event" size={20} color="#FFF" />,
-  });
 
   async function loadAppointments() {
     const response = await api.get('appointments');
@@ -64,9 +58,6 @@ function Dashboard({ navigation, isFocused }) {
 
 Dashboard.propTypes = {
   isFocused: PropTypes.bool.isRequired,
-  navigation: PropTypes.shape({
-    setOptions: PropTypes.func.isRequired,
-  }).isRequired,
 };
 
 export default withNavigationFocus(Dashboard);

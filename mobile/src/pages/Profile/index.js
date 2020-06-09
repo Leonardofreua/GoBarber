@@ -1,7 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import { updateProfileRequest } from '~/store/modules/user/actions';
 import { signOut } from '~/store/modules/auth/actions';
@@ -18,7 +16,7 @@ import {
   SignOutButton,
 } from './styles';
 
-export default function Profile({ navigation }) {
+export default function Profile() {
   const profile = useSelector((state) => state.user.profile);
   const dispatch = useDispatch();
 
@@ -33,13 +31,6 @@ export default function Profile({ navigation }) {
   const [oldPassword, setOldPassword] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-
-  navigation.setOptions({
-    tabBarLabel: 'My Profile',
-    tabBarIcon: () => (
-      <Icon name="person" size={20} color="rgba(255, 255, 255, 0.6)" />
-    ),
-  });
 
   // Clean input form after profile is updated on Redux store
   useEffect(() => {
@@ -130,9 +121,3 @@ export default function Profile({ navigation }) {
     </Background>
   );
 }
-
-Profile.propTypes = {
-  navigation: PropTypes.shape({
-    setOptions: PropTypes.func.isRequired,
-  }).isRequired,
-};

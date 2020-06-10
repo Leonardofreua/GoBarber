@@ -8,11 +8,11 @@ import {
   setMinutes,
   setSeconds,
   isBefore,
-  isEqual,
   parseISO,
 } from 'date-fns';
 import enUS from 'date-fns/locale/en-US';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+
 import api from '~/services/api';
 
 import { Container, Time } from './styles';
@@ -43,8 +43,9 @@ export default function Dashboard() {
         return {
           time: `${hour}:00h`,
           past: isBefore(compareDate, new Date()),
-          appointment: response.data.find((appoint) =>
-            isEqual(parseISO(appoint.date), compareDate)
+          appointment: response.data.find(
+            (appoint) =>
+              parseISO(appoint.date).toString() === compareDate.toString()
           ),
         };
       });

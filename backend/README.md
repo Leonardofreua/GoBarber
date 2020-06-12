@@ -27,7 +27,7 @@
 
 <br />
 
-## :rocket: Technologies
+## :rocket: &nbsp; Technologies
 
 This project was developed with the following technologies:
 
@@ -47,7 +47,7 @@ This project was developed with the following technologies:
 - [MongoDB](https://www.mongodb.com/) - *To store the Notifications*
 - [Redis](https://redis.io/) - *Manage by sending emails in the queue*
 
-## 💻 Project
+## 💻 &nbsp; Project
 
 GoBarber is a project that aims to provide several features present in a possible application for a Barber Shop, these features include:
 
@@ -57,7 +57,7 @@ GoBarber is a project that aims to provide several features present in a possibl
 - Schedule notifications;
 - Appointment cancellation with email notification to the provider.
 
-## :minidisc: Installation
+## :minidisc: &nbsp; Installation
 
 - Clone project: `git clone https://github.com/Leonardofreua/GoBarber.git`
 - Download Postgres image: `docker run --name storage_goBarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres`
@@ -66,7 +66,7 @@ GoBarber is a project that aims to provide several features present in a possibl
 - Run: `yarn install`
 - Then: `yarn dev`
 
-## 🤔 How to contribute
+## 🤔 &nbsp; How to contribute
 
 - Fork this repository;
 - Create a branch with your feature: `git checkout -b my-feature`;
@@ -75,6 +75,6 @@ GoBarber is a project that aims to provide several features present in a possibl
 
 Once your pull request merge is done, you can delete your branch.
 
-## :memo: License
+## :memo: &nbsp; License
 
 This project is under the MIT license. See [LICENSE](LICENSE) file for more details.

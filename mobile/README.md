@@ -23,7 +23,7 @@
 </br>
 
 <p align="center">
-  <img alt="Sign In" src="../.github/web-login.png" width="700px">
+  <img alt="Sign In" src="../.github/mobile-1.png" width="700px">
 </p>
 
 ---

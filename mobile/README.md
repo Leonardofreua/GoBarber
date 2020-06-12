@@ -79,12 +79,11 @@ $ yarn
 
 # If you are going to emulate with android, run the commands below
 $ react-native run-android
-$ react-native start --reset-cache
-
+$ react-native start
 
 # If you are going to emulate with ios, run this command
 $ react-native run-ios
-$ react-native start --reset-cache
+$ react-native start
 
 # In both cases, if any problem occurs, turn the command below
 $ react-native start --reset-cache

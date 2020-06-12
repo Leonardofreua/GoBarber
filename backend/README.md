@@ -9,9 +9,12 @@
   <small>Project created during the Rocketseat GoStack Bootcamp.</small>
 </h4>
 <p align="center">
+  <a href="https://www.linkedin.com/in/leonardo-freua-aa3a40138/" target="_blank" rel="noopener noreferrer">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Leonardo%20Freua-%233b9eff">
+  </a>
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Leonardofreua/GoBarber">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Leonardofreua/GoBarber">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=%233b9eff">
 </p>
 
 <p align="center">
